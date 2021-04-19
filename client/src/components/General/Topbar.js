@@ -16,8 +16,6 @@ import MIcon from "../Utils/MIcon";
 import { ReactComponent as Logo } from "../../theme/assets/logo.svg";
 import { ReactComponent as Sun } from "../../theme/assets/sun-2.svg";
 import { ReactComponent as HalfMoon } from "../../theme/assets/half-moon-2.svg";
-import { ReactComponent as CloseIcon } from "../../theme/assets/close.svg";
-import { ReactComponent as MenuIcon } from "../../theme/assets/menu.svg";
 
 const Topbar = ({ toggleTheme, handleClick, handleClick2, openDropdown }) => {
   const classes = useStyles();
@@ -61,20 +59,21 @@ const Topbar = ({ toggleTheme, handleClick, handleClick2, openDropdown }) => {
             )}
           </IconButton>
           {matches ? (
-            <IconButton edge="end" onClick={handleClick}>
-              {openDropdown ? (
-                <MIcon
-                  src={CloseIcon}
-                  viewBox="0 0 329.26933 329"
-                  fontSize="small"
-                />
-              ) : (
-                <MIcon
-                  src={MenuIcon}
-                  fontSize="small"
-                  viewBox="0 -53 384 384"
-                />
-              )}
+            <IconButton
+              edge="end"
+              onClick={handleClick}
+              className={clsx("hamburger", {
+                "hamburger--spin": openDropdown,
+                "is-active": openDropdown,
+              })}
+            >
+              <span className={clsx("hamburger-box")}>
+                <span
+                  className={clsx("hamburger-inner", classes.menuColor, {
+                    [classes.menuColor]: openDropdown,
+                  })}
+                ></span>
+              </span>
             </IconButton>
           ) : (
             <>

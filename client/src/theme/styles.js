@@ -688,6 +688,16 @@ const useStyles = makeStyles(
     hidden: {
       display: "none",
     },
+    menuColor: {
+      backgroundColor: theme.palette.type === "dark" && "#f9f9f9",
+
+      "&:before": {
+        backgroundColor: theme.palette.type === "dark" && "#f9f9f9",
+      },
+      "&:after": {
+        backgroundColor: theme.palette.type === "dark" && "#f9f9f9",
+      },
+    },
   }),
   { index: 1 }
 );
