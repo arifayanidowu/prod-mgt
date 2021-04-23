@@ -28,10 +28,6 @@ const Wrapper = ({ toggleTheme, children }) => {
   const width = useTransform(scrollYProgress, [0, 1], [0, 1]);
   const progress = useMotionTemplate`${width}`;
 
-  // useEffect(() => {
-  //   return scrollYProgress.onChange((v) => console.log(v));
-  // }, [scrollYProgress]);
-
   useEffect(() => {
     const token = localStorage.getItem("prod:token");
     if (token) {
