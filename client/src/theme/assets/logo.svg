@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1920" viewBox="0 0 1920 1920">
+  <defs>
+    <filter id="Rectangle_3" x="521.54" y="545.771" width="761.12" height="834.458" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-Web_1920_2">
+      <rect width="1920" height="1920"/>
+    </clipPath>
+  </defs>
+  <g id="Web_1920_2" data-name="Web 1920 – 2" clip-path="url(#clip-Web_1920_2)">
+    <g id="Rectangle_4" data-name="Rectangle 4" transform="translate(669.489 931.827) rotate(-141)" fill="#cd4950" stroke="#707070" stroke-width="1">
+      <rect width="256" height="256" rx="128" stroke="none"/>
+      <rect x="0.5" y="0.5" width="255" height="255" rx="127.5" fill="none"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_3)">
+      <g id="Rectangle_3-2" data-name="Rectangle 3" transform="translate(1273.66 716.32) rotate(130)" fill="#4c91d6" stroke="#4c91d6" stroke-width="10">
+        <rect width="851" height="256" rx="128" stroke="none"/>
+        <rect x="5" y="5" width="841" height="246" rx="123" fill="none"/>
+      </g>
+    </g>
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(1199.638 1343.407) rotate(-141)" fill="#4c91d6" stroke="#4c91d6" stroke-width="10">
+      <rect width="674" height="256" rx="128" stroke="none"/>
+      <rect x="5" y="5" width="664" height="246" rx="123" fill="none"/>
+    </g>
+  </g>
+</svg>
